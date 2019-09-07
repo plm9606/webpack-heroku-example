@@ -4,10 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack",
-        "start": "webpack -p",
-        "dev-server": "webpack-dev-server --config webpack.config.js"
+        "dev": "webpack-dev-server --mode development --open",
+        "start": "node server.js",
+        "heroku-postbuild": "webpack -p"
     },
     "keywords": [],
     "author": "",
@@ -18,6 +17,7 @@
         "webpack-dev-server": "^3.8.0"
     },
     "dependencies": {
+        "express": "^4.17.1",
         "tree": "^0.1.3"
     }
 }

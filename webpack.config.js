@@ -3,14 +3,14 @@ const webpack = require("webpack");
 
 module.exports = {
     mode: "development",
-    entry: ["./src/index.js"],
+    entry: ["./index.js"],
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "dist"),
-        publicPath: "/dist/"
+        path: __dirname + "/dist",
+        publicPath: "/"
     },
     devServer: {
-        contentBase: __dirname + "/dist/",
+        contentBase: __dirname,
         inline: true,
         hot: true,
         host: "localhost",
