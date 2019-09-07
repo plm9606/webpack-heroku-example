@@ -6,6 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
+        "start": "webpack -p",
         "dev-server": "webpack-dev-server --config webpack.config.js"
     },
     "keywords": [],
